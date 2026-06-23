@@ -1,29 +1,32 @@
 import Link from 'next/link'
-import { Facebook, Twitter, Instagram, MapPin, Mail, Phone } from 'lucide-react'
+import { Facebook, Twitter, Instagram, Briefcase, Mail, Download } from 'lucide-react'
 
-const mainLinks = [
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'Contact v2', href: '/contact-v2' },
+const companyLinks = [
+  { label: 'About SIS Group', href: '/company/about-sis' },
+  { label: 'About OneSIS',    href: '/company/about-onesis' },
+  { label: 'Board & Management', href: '/company/board' },
+  { label: 'Why OneSIS',     href: '/company/why-onesis' },
+  { label: 'News & Media',   href: '/company/news' },
+  { label: 'Training',       href: '/company/training' },
 ]
 
-const shopLinks = [
-  { label: 'Shop', href: '/shop' },
-  { label: 'With sidebar', href: '/shop/sidebar' },
-  { label: 'Product detail', href: '/shop/product' },
-  { label: 'Product detail v2', href: '/shop/product-v2' },
-  { label: 'Cart', href: '/cart' },
-  { label: 'Checkout', href: '/checkout' },
-  { label: 'Order confirmation', href: '/order' },
+const solutionLinks = [
+  { label: 'Integrated FM',        href: '/solutions/integrated-fm' },
+  { label: 'Property Management',  href: '/solutions/property-management' },
+  { label: 'Specialized Services', href: '/solutions/specialized-services' },
+  { label: 'Case Studies',         href: '/solutions/case-studies' },
 ]
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Facebook,  href: 'https://facebook.com',  label: 'Facebook' },
+  { icon: Twitter,   href: 'https://twitter.com',   label: 'Twitter' },
   { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+]
+
+const contactItems = [
+  { icon: Briefcase, label: 'Careers',          href: '/career' },
+  { icon: Mail,      label: 'Contact Us',        href: '/contact' },
+  { icon: Download,  label: 'Download Profile',  href: '/company/profile' },
 ]
 
 export default function Footer() {
@@ -38,12 +41,13 @@ export default function Footer() {
           <div className="col-span-2 xl:col-span-2">
             <Link href="/" className="inline-block mb-5">
               <span className="text-2xl font-extrabold font-heading">
-                <span className="text-brand-dark">Inno</span>
-                <span className="text-primary">var</span>
+                <span className="text-brand-dark">One</span>
+                <span className="text-primary">SIS</span>
               </span>
             </Link>
             <p className="text-gray-500 text-sm xl:text-base leading-relaxed max-w-xs mb-6">
-              A business consulting firm that offers a range of services to help clients improve and scale their businesses globally.
+              A 100% subsidiary of SIS Ltd. — India&apos;s #1 Security &amp; Facility
+              Management Group. Integrated Solutions, Self Delivered.
             </p>
             <div className="flex gap-3">
               {socialLinks.map(({ icon: Icon, href, label }) => (
@@ -59,13 +63,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Main Pages */}
+          {/* Company */}
           <div>
             <h5 className="font-heading font-bold text-brand-dark text-base xl:text-lg mb-5">
-              Main pages
+              Company
             </h5>
             <ul className="space-y-3">
-              {mainLinks.map((link) => (
+              {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -78,13 +82,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Shop Pages */}
+          {/* Solutions */}
           <div>
             <h5 className="font-heading font-bold text-brand-dark text-base xl:text-lg mb-5">
-              Shop pages
+              Solutions
             </h5>
             <ul className="space-y-3">
-              {shopLinks.map((link) => (
+              {solutionLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -97,46 +101,47 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Office */}
+          {/* Get in Touch */}
           <div>
             <h5 className="font-heading font-bold text-brand-dark text-base xl:text-lg mb-5">
-              Office
+              Get in Touch
             </h5>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-gray-500 text-sm xl:text-base">
-                <MapPin size={16} className="text-primary mt-0.5 flex-shrink-0" />
-                <span>116 Royal ln, London</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-500 text-sm xl:text-base">
-                <Mail size={16} className="text-primary mt-0.5 flex-shrink-0" />
-                <span>Innovar@business.com</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-500 text-sm xl:text-base">
-                <Phone size={16} className="text-primary mt-0.5 flex-shrink-0" />
-                <span>+123-234-324-917</span>
-              </li>
+              {contactItems.map(({ icon: Icon, label, href }) => (
+                <li key={href} className="flex items-start gap-3 text-sm xl:text-base">
+                  <Icon size={16} className="text-primary mt-0.5 flex-shrink-0" />
+                  <Link
+                    href={href}
+                    className="text-gray-500 hover:text-primary transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-100 mt-10 xl:mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">
-            © 2025{' '}
+            © {new Date().getFullYear()}{' '}
             <Link href="/" className="text-primary hover:underline font-semibold">
-              Innovar
+              OneSIS
             </Link>{' '}
-            — All Rights Reserved.
+            — All Rights Reserved. A SIS Group Company.
           </p>
           <div className="flex gap-6">
             <Link href="/terms" className="text-gray-400 hover:text-primary text-sm font-medium transition-colors">
               Terms of use
             </Link>
-            <Link href="/privacy" className="text-gray-400 hover:text-primary text-sm font-medium transition-colors">
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-primary text-sm font-medium transition-colors">
               Privacy notice
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   )

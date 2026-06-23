@@ -32,7 +32,7 @@ export default function CtaBottomSection() {
           {/* Content */}
           <div className="relative z-10 max-w-xl sm:max-w-2xl xl:max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-3xl sm:text-4xl xl:text-6xl text-white mb-4 xl:mb-6 leading-tight">
-              Start scaling your business with Innovar
+              Start scaling your business with OneSIS
             </h2>
             <p className="text-white/75 text-base sm:text-lg xl:text-xl mb-8 xl:mb-10">
               14-day free trial. No credit card required.

@@ -14,28 +14,28 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Innovar has been a game-changer for us. They turned our old approach into a high-performing conversion machine. Our conversion rates have increased by 125% since they revamped our website and messaging strategy.",
+      "OneSIS has been a game-changer for us. They turned our old approach into a high-performing conversion machine. Our conversion rates have increased by 125% since they revamped our website and messaging strategy.",
     name: 'Mark Zellers',
     role: 'Co-Founder',
     seed: 'team_mark',
   },
   {
     quote:
-      "It's been a pure joy working with Innovar. The expertise they have in unifying content and paid channels — setting it up as one unified team — means we are always optimizing from every possible angle.",
+      "It's been a pure joy working with OneSIS. The expertise they have in unifying content and paid channels — setting it up as one unified team — means we are always optimizing from every possible angle.",
     name: 'André Garcia',
     role: 'UX Researcher',
     seed: 'team_andre',
   },
   {
     quote:
-      "Velocity is crucial in marketing. The more campaigns we run together, the bigger the impact. Innovar has delivered consistent results since we revamped our strategy and messaging with their guidance.",
+      "Velocity is crucial in marketing. The more campaigns we run together, the bigger the impact. OneSIS has delivered consistent results since we revamped our strategy and messaging with their guidance.",
     name: 'Henry Matt',
     role: 'Customer Success',
     seed: 'team_henry',
   },
   {
     quote:
-      "The depth of Innovar's consulting expertise is truly unmatched. They understood our challenges and delivered solutions that created tangible, lasting impact across every department in our organization.",
+      "The depth of OneSIS's consulting expertise is truly unmatched. They understood our challenges and delivered solutions that created tangible, lasting impact across every department in our organization.",
     name: 'Peter Lary',
     role: 'Engineering Manager',
     seed: 'team_peter',

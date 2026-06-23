@@ -10,17 +10,7 @@ export default function CounterSection() {
   return (
     <section className="bg-gradient-to-br from-gray-50 to-white border-y border-gray-200">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 xl:py-20">
-        {/* Tagline */}
-        {/* <div className="text-center max-w-3xl mx-auto mb-14">
-          <h3 className="font-heading font-bold text-3xl sm:text-4xl xl:text-5xl text-brand-dark leading-tight">
-            <span className="bg-gradient-to-r from-primary to-primary-600 bg-clip-text text-transparent">
-              Transform. Reduce. Enable. Enhance.
-            </span>
-          </h3>
-          <p className="text-gray-500 text-lg sm:text-xl mt-3 font-medium tracking-wide">
-            Underpinned by leading technology and flawless service excellence
-          </p>
-        </div> */}
+       
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
@@ -40,6 +30,18 @@ export default function CounterSection() {
             </div>
           ))}
         </div>
+        <br />
+         {/* Tagline */}
+        {/* <div className="text-center max-w-3xl mx-auto mb-14">
+          <h3 className="font-heading font-bold text-3xl sm:text-4xl xl:text-5xl text-brand-dark leading-tight">
+            <span className="bg-gradient-to-r from-primary to-primary-600 bg-clip-text text-transparent">
+              Transform. Reduce. Enable. Enhance.
+            </span>
+          </h3>
+          <p className="text-gray-500 text-lg sm:text-xl mt-3 font-medium tracking-wide">
+            Underpinned by leading technology and flawless service excellence
+          </p>
+        </div> */}
       </div>
     </section>
   );

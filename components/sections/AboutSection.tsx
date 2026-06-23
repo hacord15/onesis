@@ -18,7 +18,7 @@ const tabs: Tab[] = [
     label: 'Innovation',
     title: 'Backed by a diverse and experienced team',
     description:
-      "Innovar's strength lies in its diverse and experienced team. Our experts are well-versed in various marketing disciplines and business transformation strategies.",
+      "OneSIS's strength lies in its diverse and experienced team. Our experts are well-versed in various marketing disciplines and business transformation strategies.",
     points: [
       'Stories that speak to who you are and what you do',
       'As we work with you, building stronger outcomes together',
@@ -40,7 +40,7 @@ const tabs: Tab[] = [
     label: 'Growing',
     title: 'Helping startups manage their workforce easily',
     description:
-      "Innovar's strength lies in its diverse and experienced team. Our experts are well-versed in workforce management and startup growth strategies.",
+      "OneSIS's strength lies in its diverse and experienced team. Our experts are well-versed in workforce management and startup growth strategies.",
     points: [
       'Streamlined HR tools designed for fast-growing companies',
       'Centralized workforce management from day one',
@@ -50,7 +50,7 @@ const tabs: Tab[] = [
 ]
 
 const statCards = [
-  { value: '10M', label: 'Clients worldwide have been benefited by Innovar', icon: '👥' },
+  { value: '10M', label: 'Clients worldwide have been benefited by OneSIS', icon: '👥' },
   { value: '500+', label: 'Total projects served for marketing and growth purposes', icon: '📋' },
   { value: '3.8%', label: 'Improved cost disbursement and increased revenue', icon: '📈' },
 ]
@@ -138,7 +138,7 @@ export default function AboutSection() {
         </div>
 
         {/* Stat Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:gap-6 mt-16 xl:mt-24">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:gap-6 mt-16 xl:mt-24">
           {statCards.map((card) => (
             <div key={card.value} className="bg-brand-gray rounded-2xl p-6 xl:p-8">
               <div className="flex items-center justify-between mb-3">
@@ -152,7 +152,7 @@ export default function AboutSection() {
               <p className="text-gray-500 text-sm xl:text-base leading-relaxed">{card.label}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )

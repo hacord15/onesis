@@ -14,7 +14,7 @@ export default function HeroSection() {
           <div className="w-full lg:w-1/2 order-1">
             <div className="relative h-72 sm:h-[420px] lg:h-[600px] xl:h-[600px] rounded-b-3xl lg:rounded-none lg:rounded-r-3xl overflow-hidden">
               {/* <Image
-                src="https://picsum.photos/seed/hero_innovar/1200/1600"
+                src="https://picsum.photos/seed/hero_OneSIS/1200/1600"
                 alt="Business consulting professionals"
                 fill
                 className="object-cover"
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 poster="/assets/about-banner.png"
                 className="absolute inset-0 w-full h-full object-cover"
               >
-                <source src="/assets/hero_banner.mp4" type="video/mp4" />
+                <source src="/assets/hero_banner1.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
             </div>

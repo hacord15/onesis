@@ -11,6 +11,9 @@ import CtaMiddleSection from '@/components/sections/CtaMiddleSection'
 import BlogSection from '@/components/sections/BlogSection'
 import FaqSection from '@/components/sections/FaqSection'
 import CtaBottomSection from '@/components/sections/CtaBottomSection'
+import ValuePillars from '@/components/sections/ValuePillars'
+import SolutionsSnapshot from '@/components/sections/SolutionsSnapshot'
+import SISGroupBand from '@/components/sections/SISGroupBand'
 
 export default function Home() {
   return (
@@ -19,17 +22,21 @@ export default function Home() {
       <main>
         <HeroSection />
         <CounterSection />
-        {/* <AboutSection />
-        <ServicesSection />
+        <AboutSection />
+        <ValuePillars />
+        <SolutionsSnapshot />
+        
+         {/*<ServicesSection />
         <ProjectsSection />
         <PricingSection />
         <TestimonialsSection />
         <CtaMiddleSection />
         <BlogSection />
-        <FaqSection />
-        <CtaBottomSection /> */}
+        <FaqSection />*/}
+        <SISGroupBand />
+        {/* <CtaBottomSection />  */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

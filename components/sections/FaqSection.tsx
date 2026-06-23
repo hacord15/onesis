@@ -21,7 +21,7 @@ const faqs: FaqItem[] = [
       'Consultants bring specialized expertise, cross-industry experience, and an outside perspective that takes years to develop internally. They also offer flexibility — engaged for specific projects without long-term salary commitments, making them cost-effective for targeted challenges.',
   },
   {
-    question: '3. How does Innovar ensure data privacy and security?',
+    question: '3. How does OneSIS ensure data privacy and security?',
     answer:
       'We implement rigorous data protection protocols aligned with GDPR and industry standards. All client engagements are covered by NDAs, and our teams follow strict access controls and security practices to ensure confidentiality throughout every project.',
   },
@@ -61,7 +61,7 @@ export default function FaqSection() {
           <div className="hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden h-[500px] xl:h-[620px] sticky top-28">
               <Image
-                src="https://picsum.photos/seed/faq_innovar/900/1200"
+                src="https://picsum.photos/seed/faq_OneSIS/900/1200"
                 alt="FAQ illustration"
                 fill
                 className="object-cover"
