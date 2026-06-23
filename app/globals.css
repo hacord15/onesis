@@ -1,0 +1,94 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-gray-900 bg-white antialiased;
+  }
+}
+
+@layer components {
+  .section-tag {
+    @apply inline-block text-sm font-semibold px-4 py-1.5 rounded-full bg-primary-25 text-primary;
+  }
+  .section-title {
+    @apply font-heading font-extrabold text-3xl sm:text-4xl xl:text-5xl text-brand-dark leading-tight;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-red: #C81020;
+    --primary-black: #000000;
+    --secondary-gray: #5A5A5A;
+
+    --neutral-dark: #222222;
+    --neutral-gray: #666666;
+    --neutral-light: #BBBBBB;
+    --neutral-bg: #EEEEEE;
+    --white: #FFFFFF;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white antialiased;
+    color: var(--neutral-dark);
+  }
+}
+
+@layer components {
+  .section-tag {
+    @apply inline-block text-sm font-semibold px-4 py-1.5 rounded-full;
+    background-color: var(--primary-red);
+    color: white;
+  }
+
+  .section-title {
+    @apply font-heading font-extrabold text-3xl sm:text-4xl xl:text-5xl leading-tight;
+    color: var(--primary-black);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
