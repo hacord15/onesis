@@ -60,7 +60,7 @@ export default function AboutSection() {
   const current = tabs[activeTab]
 
   return (
-    <section className="py-16 sm:py-24 xl:py-32 bg-white">
+    <section className="py-16  bg-white">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
