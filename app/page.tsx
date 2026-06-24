@@ -14,6 +14,9 @@ import CtaBottomSection from '@/components/sections/CtaBottomSection'
 import ValuePillars from '@/components/sections/ValuePillars'
 import SolutionsSnapshot from '@/components/sections/SolutionsSnapshot'
 import SISGroupBand from '@/components/sections/SISGroupBand'
+import AboutHeroCollage from '@/components/sections/Aboutherocollage'
+import TechPlatformsSection from '@/components/sections/TechPlatformsSection'
+import FacilityCtaBanner from '@/components/sections/Facilityctabanner'
 
 export default function Home() {
   return (
@@ -25,6 +28,8 @@ export default function Home() {
         <AboutSection />
         <ValuePillars />
         <SolutionsSnapshot />
+         <TechPlatformsSection />
+        {/* <AboutHeroCollage /> */}
         
          {/*<ServicesSection />
         <ProjectsSection />
@@ -34,7 +39,9 @@ export default function Home() {
         <BlogSection />
         <FaqSection />*/}
         <SISGroupBand />
-        {/* <CtaBottomSection />  */}
+{/*        
+        <CtaBottomSection />  */}
+        <FacilityCtaBanner />
       </main>
       <Footer />
     </div>

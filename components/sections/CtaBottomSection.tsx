@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 
 function StarIcon({ className }: { className?: string }) {
   return (
@@ -32,16 +32,26 @@ export default function CtaBottomSection() {
           {/* Content */}
           <div className="relative z-10 max-w-xl sm:max-w-2xl xl:max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-3xl sm:text-4xl xl:text-6xl text-white mb-4 xl:mb-6 leading-tight">
-              Start scaling your business with OneSIS
+              Ready to Simplify Your Facility Management?
             </h2>
             <p className="text-white/75 text-base sm:text-lg xl:text-xl mb-8 xl:mb-10">
-              14-day free trial. No credit card required.
+              Let's build safer, smarter, and more efficient facilities together.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 bg-secondary text-brand-dark px-8 xl:px-10 py-4 rounded-xl font-extrabold text-base xl:text-lg hover:bg-yellow-300 transition-all duration-200 shadow-2xl group"
+              className="inline-flex items-center gap-3 bg-secondary text-brand-dark px-8 xl:px-10 py-4 rounded-xl font-extrabold text-base xl:text-lg bg-yellow-300  mr-2 transition-all duration-200 shadow-2xl group"
             >
-              Get a quote
+              Download Profile
+              <Download
+                size={20}
+                className="group-hover:translate-x-1 transition-transform duration-200"
+              />
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-3 bg-secondary text-brand-dark px-8 xl:px-10 py-4 rounded-xl font-extrabold text-base xl:text-lg bg-yellow-300 transition-all duration-200 shadow-2xl group"
+            >
+              Request Consultation
               <ArrowRight
                 size={20}
                 className="group-hover:translate-x-1 transition-transform duration-200"

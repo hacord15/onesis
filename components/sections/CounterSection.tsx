@@ -9,7 +9,7 @@ const stats = [
 export default function CounterSection() {
   return (
     <section className="bg-gradient-to-br from-gray-50 to-white border-y border-gray-200">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 xl:py-20">
+      <div className="container-fluid mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 xl:py-20">
        
 
         {/* Stats Grid */}
