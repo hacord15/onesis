@@ -15,7 +15,7 @@ import ValuePillars from '@/components/sections/ValuePillars'
 import SolutionsSnapshot from '@/components/sections/SolutionsSnapshot'
 import SISGroupBand from '@/components/sections/SISGroupBand'
 import AboutHeroCollage from '@/components/sections/Aboutherocollage'
-import TechPlatformsSection from '@/components/sections/TechPlatformsSection'
+import TechPlatformsSection from '../components/sections/TechPlatformsSection'
 
 import FacilityCtaBanner from '@/components/sections/Facilityctabanner'
 
