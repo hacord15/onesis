@@ -15,7 +15,8 @@ import ValuePillars from '@/components/sections/ValuePillars'
 import SolutionsSnapshot from '@/components/sections/SolutionsSnapshot'
 import SISGroupBand from '@/components/sections/SISGroupBand'
 import AboutHeroCollage from '@/components/sections/Aboutherocollage'
-import TechPlatformsSection from '@/components/sections/TechPlatformsSection'
+import TechPlatformSection from '@/components/sections/TechPlatformsSection'
+
 import FacilityCtaBanner from '@/components/sections/Facilityctabanner'
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
         <AboutSection />
         <ValuePillars />
         <SolutionsSnapshot />
-         <TechPlatformsSection />
+         <TechPlatformSection />
         {/* <AboutHeroCollage /> */}
         
          {/*<ServicesSection />
